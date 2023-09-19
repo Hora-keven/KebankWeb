@@ -7,7 +7,6 @@ function Content() {
                 <h1 id='firstName'>Ke</h1>
                 <h1 id='secondName'>Bank</h1>
 
-
             </div>
             <div className="slogan">
                 <p>O banco que facilita</p>

@@ -51,15 +51,20 @@ p{
     top: 700px;
     border-radius: 4ch;
 }
+
 .textol{
     position: relative;
     top: 200px;
 }
+
 footer{
     background-color: #0084B4;
     position: relative;
-    top: 747px;
-    height: 15vh;
+    top: 735px;
+    height: 20vh;
+    width: 100%;
     color: white;
     font-size: 1.5ch;
+    margin: 0;
+    padding: 0;
 }
