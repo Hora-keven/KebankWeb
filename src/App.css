@@ -1,13 +1,15 @@
 #root {
-  width: auto;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
-  height: 160vh;
+  height: 103vh;
   background-color:#e6e6e6 ;
+  
   
 }
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
