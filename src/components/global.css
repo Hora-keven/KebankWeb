@@ -5,9 +5,8 @@
     justify-content: flex-start;
     flex-direction: row;
     color: #ffffff;
-    height: 10vh;
+    height: 15vh;
    
-    
 }
 
 #firstName {
@@ -26,6 +25,7 @@
 
 
 }
+
 .kebank{
     display: flex;
     width:100%;
@@ -34,21 +34,24 @@
     color: #0084B4
     
 }
+
 .slogan{
     position: relative;
     bottom: 10px;
 }
+
 p{
-    font-size: 4ch;
+    font-size: 3.5ch;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #imgkebank{
-    height: 10vh;
-    width: 40vh;
+    position: relative;
+    bottom: 35px;
 }
 #imgkebankRigth{
-    height: 10vh;
-    width: 30vh;
+    position: relative;
+    bottom: 50px;
  
 }
 .content{
@@ -69,62 +72,69 @@ p{
     width: 100%;
     justify-content: center;
     align-items: center;
-
     display: flex;
-    flex-direction: row;
-
+    height: 35vh;
+ 
 }
 .texto{
     width: 50%;
 }
-.ContainertextoL{
+.textoR{
+    width: 50%;
+}
+.ContainertextoR{
     width: 100%;
     justify-content: center;
     align-items: center;
-
     display: flex;
-    flex-direction: row;
-    background-color: red;
+    height: 35vh;
 }
 
 img{
-    height: 30vh;
+    height: 40vh;
 }
+
 footer{
     background-color: #0084B4;
-
+    display: flex;
     height: 20vh;
     width: 100%;
     color: white;
     font-size: 1.5ch;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
 }
+
+
+
 @media screen and (max-width: 1280px) {
     #imgkebank {
-        height: 5vh;
-        width: 20vh;
+        position: relative;
+        top: 15px;
     }
-    .Containertexto{
-        width: 50%;
-    
-        justify-content: center;
-        align-items: center;
+
+    .ContainertextoImg{
+        height: 34vh;
+    }
+    .ContainertextoR{
+        height: 33vh;
+    }
+    .texto{
+        width: 45%;
     }
     #imgkebankRigth{
-        height: 0;
-        width: 40vh;
-    
+        position: relative;
+        top: 6px;
     }
     img{
-        height: 60vh;
+        height: 30vh;
     }
-    .ContainertextoL{
-        width: 50%;
-      
-    }
-    #root{
-        height: 180vh;
+  
+   
+    p{
+        font-size: 3ch;
     }
   }
   @media screen and (max-width: 920px) {

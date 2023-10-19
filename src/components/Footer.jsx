@@ -1,7 +1,9 @@
-function Footer(){
-    return(
+function Footer() {
+    return (
         <footer>
-            <h1>Pix, pagamentos, depositos, poupança</h1>
+            <div className="textoFooter">
+                <h1>Pix, pagamentos, depositos, poupança</h1>
+            </div>
         </footer>
     )
 }
