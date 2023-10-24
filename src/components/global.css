@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+  
+    display: flex;
+    min-width: 320px;
+    min-height: 100vh;
+   
+  }
+
 .header {
     display: flex;
     width: 100%;
@@ -5,8 +14,16 @@
     justify-content: flex-start;
     flex-direction: row;
     color: #ffffff;
-    height: 15vh;
+    height: 13vh;
    
+}
+.pages{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 700px;
+    padding: 3.5em;
 }
 
 #firstName {
@@ -17,6 +34,11 @@
     margin-left: 25px;
 
 }
+h1 {
+    font-size: 2.2em;
+    line-height: 1.1;
+  }
+  
 
 #secondName {
     margin-top: 20px;
@@ -31,13 +53,24 @@
     width:100%;
     justify-content: center;
     flex-direction: row;
-    color: #0084B4
+    color: #ffffff
     
 }
 
 .slogan{
     position: relative;
     bottom: 10px;
+    display: flex;
+    width: 15%;
+    height: 10vh;
+    flex-direction: column;
+}
+#mensagemSlogan{
+    font-size: 1.05em;
+}
+
+.slogan:hover{
+    border-bottom: 34px  black;
 }
 
 p{
@@ -56,7 +89,7 @@ p{
 }
 .content{
     width: 100%;
-    height: auto;
+    height: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +99,7 @@ p{
     flex-direction: column;
     display: flex;
     width: 100%;
+    
 }
 
 .ContainertextoImg{
@@ -73,7 +107,7 @@ p{
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 35vh;
+    height: 44vh;
  
 }
 .texto{
@@ -87,7 +121,7 @@ p{
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 35vh;
+    height: 44vh;
 }
 
 img{
@@ -105,8 +139,18 @@ footer{
     padding: 0;
     align-items: center;
     justify-content: center;
+  
 }
 
+a {
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: inherit;
+  }
+  
+  a:hover {
+    color: #535bf2;
+  }
 
 
 @media screen and (max-width: 1280px) {
@@ -114,7 +158,6 @@ footer{
         position: relative;
         top: 15px;
     }
-
     .ContainertextoImg{
         height: 34vh;
     }
@@ -132,10 +175,6 @@ footer{
         height: 30vh;
     }
   
-   
-    p{
-        font-size: 3ch;
-    }
   }
   @media screen and (max-width: 920px) {
     #imgkebank {
@@ -146,14 +185,11 @@ footer{
         width: 100%;
         height: auto;
     }
-    footer{
-        top: 990px;
-    }
+   
     .Containertexto{
-
+        width: 80%;
         justify-content: center;
         align-items: center;
-   
        
     }
     p{
@@ -173,7 +209,7 @@ footer{
         height: 50%;
     }
     .texto{
-        width: 100%;
+        width: 60%;
     }
     .textol{
         width: 100%;
@@ -181,4 +217,34 @@ footer{
 
  
   }
+  @media screen and (max-width: 820px) {
+    #imgkebank {
+        height: auto;
+        width: auto;
+    }
+    #imgkebankRigth {
+        height: auto;
+        width: auto;
+    }
+    
+}
+@media screen and (max-width: 520px) {
+    #imgkebank {
+        height: auto;
+        width: auto;
+    }
+    #imgkebankRigth {
+        height: auto;
+        width: auto;
+    }
+    p{
+        font-size: 1.1em;
+    }
+    .header{
+        text-align: center;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+}
   

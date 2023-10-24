@@ -1,6 +1,6 @@
 import dolar from './../assets/bank.png'
 import card from './../assets/handcard.png'
-function Content() {
+function ContentConta() {
     return (
         <>
             <div className="content">
@@ -27,4 +27,4 @@ function Content() {
 
     )
 }
-export default Content
+export default ContentConta
