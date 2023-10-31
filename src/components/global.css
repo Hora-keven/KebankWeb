@@ -74,7 +74,7 @@ h1 {
 }
 
 p{
-    font-size: 3.5ch;
+    font-size: 2.5ch;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -152,6 +152,31 @@ a {
     color: #535bf2;
   }
 
+  .cards{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 2fr;
+    grid-row: 2fr 2fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-bottom: 5%;
+
+  }
+  .card{
+    background-color: rgb(202, 202, 202);
+    padding: 50px;
+    height: 35vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.textoCard{
+    width: 70%;
+    text-align: center;
+ 
+}
 
 @media screen and (max-width: 1280px) {
     #imgkebank {
