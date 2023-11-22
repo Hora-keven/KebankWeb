@@ -22,9 +22,10 @@ body {
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    left: 700px;
+    width: 100%;
     padding: 3.5em;
 }
+
 
 #firstName {
     margin-top: 20px;
@@ -52,6 +53,7 @@ h1 {
     display: flex;
     width:100%;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     color: #ffffff
     
@@ -61,7 +63,7 @@ h1 {
     position: relative;
     bottom: 10px;
     display: flex;
-    width: 15%;
+    width: 20%;
     height: 10vh;
     flex-direction: column;
 }
@@ -99,6 +101,7 @@ p{
     flex-direction: column;
     display: flex;
     width: 100%;
+    align-items: center;
     
 }
 
@@ -149,33 +152,70 @@ a {
   }
   
   a:hover {
-    color: #535bf2;
+    color: #d3d3d3;
   }
+  li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+ul a{
+    padding: 10px;
+    
+}
+.pages a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(206, 206, 206);
+}
 
   .cards{
     display: grid;
-    justify-content: center;
+    justify-content: space-evenly;
+    place-items: center;
+    width: 75vw;
     grid-template-columns: 2fr 2fr;
     grid-row: 2fr 2fr;
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 50px;
+    column-gap: 70px;
     margin-bottom: 5%;
 
   }
   .card{
-    background-color: rgb(202, 202, 202);
-    padding: 50px;
-    height: 35vh;
-
+    background-color: rgb(182, 182, 182);
+   
+    height: 30vh;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    -webkit-box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.7);
+    
+  }
+
+  .card:hover{
+    transition: .3s all ease-in-out;
+    transform: scale(1.1);
+
   }
 .textoCard{
     width: 70%;
     text-align: center;
+    margin-top: 10px;
  
+}
+.imgCard img{
+    width: 120px;
+    height: 100px;
+}
+.imgCard{
+    display: flex;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 1280px) {
@@ -251,7 +291,18 @@ a {
         height: auto;
         width: auto;
     }
-    
+    p{
+        font-size: 1.2em;
+    }
+    .cards{
+        width: 90vw;
+    }
+    .slogan{
+        width: 30%;
+    }
+    .textoCard{
+        margin-top: 10px;
+    }
 }
 @media screen and (max-width: 520px) {
     #imgkebank {
