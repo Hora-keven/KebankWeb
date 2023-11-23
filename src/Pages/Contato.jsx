@@ -1,8 +1,8 @@
 import Header from './../components/Header'
-import './../components/global.css'
+import './../../src/global.css'
 import Footer from './../components/Footer'
-import Content from './../components/ContentoConta'
-function Contato() {
+import Content from './../components/ContentAccount'
+function Contact() {
 
   return (
     <>
@@ -13,4 +13,4 @@ function Contato() {
   )
 }
 
-export default Contato
+export default Contact

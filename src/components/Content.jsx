@@ -1,9 +1,9 @@
 import bank from './../assets/bank.png'
 import imgcard from './../assets/handcard.png'
 import emprestimo from './../assets/emprestimo.png'
-import dolar from './../assets/dolar.png'
 import pix from './../assets/pix.png'
 import cartao from './../assets/cartao.png'
+import extrato from './../assets/extrato.png'
 import Card from './Card'
 function Content() {
 
@@ -14,15 +14,11 @@ function Content() {
         content:"Transparentes, seguros e do seu jeito. Opções de empréstimos que deixam você no controle do início ao fim.",
         img:emprestimo
     },
+  
     {
-        title:"Caixinhas",
-        content:"Organize e guarde dinheiro para seus planos. Crie Caixinhas personalizadas para cada um de seus objetivos.",
-        img:emprestimo
-    },
-    {
-        title:"Investimento",
-        content:"Investimentos a partir de R$ 1 e opções para todos os perfis. Uma experiência fácil, segura e transparente.",
-        img:dolar
+        title:"Extrato",
+        content:"Veja as suas movimentações. Uma experiência fácil e transparente.",
+        img:extrato
     },
     {
         title:"Cartão",
@@ -40,17 +36,17 @@ function Content() {
     return (
         <>
             <div className="content">
-                <div className="internoContent">
-                    <div className="ContainertextoImg">
+                <div className="internContent">
+                    <div className="ContainertextImg">
                         <div id="imgkebank">
                             <img src={bank} height={600} />
                         </div>
-                        <div className="texto">
+                        <div className="text">
                             <p>A facilidade está em suas mãos. O banco que ajuda os seus clientes, com várias funcionalidades</p>
                         </div>
                     </div>
-                    <div className="ContainertextoR">
-                        <div className="textoR">
+                    <div className="ContainertextR">
+                        <div className="textR">
                             <p>Cartão de débito e crédito feito pra você! Te ajudando a realizar sonhos e objetivos</p>
                         </div>
                         <div id="imgkebankRigth">

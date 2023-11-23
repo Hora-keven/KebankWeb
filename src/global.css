@@ -14,7 +14,7 @@ body {
     justify-content: flex-start;
     flex-direction: row;
     color: #ffffff;
-    height: 13vh;
+    height: 15vh;
    
 }
 .pages{
@@ -93,11 +93,26 @@ p{
     width: 100%;
     height: 100%;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
+.aboutus{
+    width: 30vw;
+    padding: 20px;
+    text-align: start;
+}
+.contact{
+    width: 30vw;
+    padding: 20px;
+    text-align: start;
+}
+.textToAll{
+    font-size: 1.0em;
+    margin-top: 15px;
+   
+}
 
-.internoContent{
+.internContent{
     flex-direction: column;
     display: flex;
     width: 100%;
@@ -105,28 +120,83 @@ p{
     
 }
 
-.ContainertextoImg{
+.ContainertextImg{
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     height: 44vh;
+    margin-top: 10px;
  
 }
-.texto{
+.text{
     width: 50%;
 }
-.textoR{
+.textR{
     width: 50%;
 }
-.ContainertextoR{
+.ContainertextR{
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     height: 44vh;
 }
+form{
+ 
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px;
+}
+.windowForm{
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.2em solid rgb(202, 202, 202);
+    box-shadow: 1px 2px 15px rgb(144, 144, 144);
+   
+}
+button{
+    width: 10vw;
+    padding: 10px;
+    background-color: #c1c1c1;
+    border: 0;
+    transition: .3s all ease-in-out;
+    font-size: 1em;
+  
+  
+    
+}
 
+button:hover{
+   background-color: #0084B4;
+   transition: .3s all ease-in-out;
+   color: rgb(255, 255, 255);
+}
+
+input{
+    width: 20vw;
+    height: 4vh;
+    outline: none;
+    outline-color: #ffffff;
+    outline-width: 0;
+    border: 0;
+
+}
+label{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 img{
     height: 40vh;
 }
@@ -134,14 +204,15 @@ img{
 footer{
     background-color: #0084B4;
     display: flex;
-    height: 20vh;
+    height: 79vh;
     width: 100%;
     color: white;
     font-size: 1.5ch;
     margin: 0;
     padding: 0;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    
   
 }
 
@@ -172,50 +243,49 @@ ul a{
 
   .cards{
     display: grid;
-    justify-content: space-evenly;
+    justify-content: center;
     place-items: center;
-    width: 75vw;
+    width: 100%;
     grid-template-columns: 2fr 2fr;
     grid-row: 2fr 2fr;
     row-gap: 50px;
-    column-gap: 70px;
-    margin-bottom: 5%;
+    padding-bottom: 7rem;
+   
 
   }
   .card{
     background-color: rgb(182, 182, 182);
-   
-    height: 30vh;
-   
+    height: 40vh;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    -webkit-box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.7);
-    -moz-box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.7);
-    box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.7);
+    gap: 1.5rem;
+    transition: .3s all ease-in-out;
+   
     
   }
-
   .card:hover{
     transition: .3s all ease-in-out;
     transform: scale(1.1);
 
   }
-.textoCard{
+
+.textCard{
     width: 70%;
     text-align: center;
-    margin-top: 10px;
+  
  
 }
 .imgCard img{
-    width: 120px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
 }
 .imgCard{
     display: flex;
     justify-content: flex-start;
+   
 }
 
 @media screen and (max-width: 1280px) {
@@ -223,13 +293,13 @@ ul a{
         position: relative;
         top: 15px;
     }
-    .ContainertextoImg{
+    .ContainertextImg{
         height: 34vh;
     }
-    .ContainertextoR{
+    .ContainertextR{
         height: 33vh;
     }
-    .texto{
+    .text{
         width: 45%;
     }
     #imgkebankRigth{
@@ -251,7 +321,7 @@ ul a{
         height: auto;
     }
    
-    .Containertexto{
+    .Containertext{
         width: 80%;
         justify-content: center;
         align-items: center;
@@ -268,15 +338,15 @@ ul a{
     img{
         height: 20vh;
     }
-    .ContainertextoL{
+    .ContainertextL{
         width: 80%;
      
         height: 50%;
     }
-    .texto{
+    .text{
         width: 60%;
     }
-    .textol{
+    .textl{
         width: 100%;
     }
 
@@ -300,7 +370,7 @@ ul a{
     .slogan{
         width: 30%;
     }
-    .textoCard{
+    .textCard{
         margin-top: 10px;
     }
 }

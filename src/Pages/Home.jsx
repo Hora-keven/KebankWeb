@@ -1,6 +1,6 @@
 import Header from './../components/Header'
 import Content from './../components/Content'
-import './../components/global.css'
+import './../../src/global.css'
 import Footer from './../components/Footer'
 
 function Home() {

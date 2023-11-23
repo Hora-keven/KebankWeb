@@ -8,10 +8,9 @@ function Header() {
             <div className="pages">
                 <li>
                     <ul>
-                        <Link to="/conta">Entrar</Link></ul>
-                    <ul>
-                        <Link to="/conta">Abra sua conta</Link>
+                        <Link to="/login">Entrar</Link>
                     </ul>
+
                 </li>
 
             </div>

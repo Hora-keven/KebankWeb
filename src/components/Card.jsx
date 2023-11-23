@@ -8,7 +8,7 @@ export default function Card({ title, content, img }) {
             </div>
 
             <h1>{title}</h1>
-            <div className="textoCard">
+            <div className="textCard">
                 <p>{content}</p>
             </div>
 
