@@ -159,6 +159,7 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     border: 0.2em solid rgb(202, 202, 202);
     box-shadow: 1px 2px 15px rgb(144, 144, 144);
    
@@ -240,7 +241,40 @@ ul a{
     color: rgb(0, 0, 0);
     background-color: rgb(206, 206, 206);
 }
-
+.content{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 3rem;
+    gap: 5rem;
+}
+.informations{
+    background-color: rgb(182, 182, 182);
+    height: 30vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  
+ 
+}
+.informationExtract{
+    background-color: #0084B4;
+    background-color: rgb(182, 182, 182);
+    height: 60vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:auto; 
+    
+}
+.informations SPAN{
+    font-size: 2ch;
+}
   .cards{
     display: grid;
     justify-content: center;
@@ -309,7 +343,9 @@ ul a{
     img{
         height: 30vh;
     }
-  
+  .informations{
+    width: 45%;
+  }
   }
   @media screen and (max-width: 920px) {
     #imgkebank {
@@ -349,8 +385,13 @@ ul a{
     .textl{
         width: 100%;
     }
-
- 
+    .windowForm{
+        width: 60vw;  
+    }
+    input{
+        width: 25vw;
+    }
+    
   }
   @media screen and (max-width: 820px) {
     #imgkebank {

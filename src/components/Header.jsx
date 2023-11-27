@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import Kebank from "./SloganKebank";
-function Header() {
+import { useContext } from 'react'
+import { InformationsContext } from '../context/InformationsContext'
+function Header({ enable }) {
+    const { userAccount, user } = useContext(InformationsContext)
+
     return (
 
         <div className="header">
@@ -8,10 +12,10 @@ function Header() {
             <div className="pages">
                 <li>
                     <ul>
-                        <Link to="/login">Entrar</Link>
+                        {enable == true ? <Link to="/login">Entrar</Link> : ""}
                     </ul>
-
                 </li>
+              
 
             </div>
         </div>
