@@ -1,7 +1,7 @@
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { InformationsContext } from "../context/InformationsContext";
 import api from "../../api/Api";
@@ -11,7 +11,9 @@ export default function Login() {
     const { informationsAccountUser, userLog } = useContext(InformationsContext)
     const [cpfCnpj, setCpfCnpj] = useState("")
     const [password, setPassword] = useState("")
+   
 
+  
     const getCpfCnpj = (event) => {
         setCpfCnpj(event.target.value);
 
@@ -97,9 +99,7 @@ export default function Login() {
                     </label>
                     <button type="submit" >Search</button>
                 </div>
-                <div className="teste">
-                    <p>{cpfCnpj}</p>
-                </div>
+              
             </form>
             <Footer />
         </>
