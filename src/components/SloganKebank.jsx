@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Kebank() {
+export default function Kebank({activeSlogan}) {
     return (
         <div className="slogan">
             <Link to="/">
@@ -10,7 +10,7 @@ export default function Kebank() {
                 </div>
             </Link>
 
-            <p id="mensagemSlogan">O banco que facilita</p>
+            <p id="mensagemSlogan">{activeSlogan == true?'O banco que facilita':""}</p>
         </div>
     )
 }

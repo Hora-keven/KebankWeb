@@ -6,7 +6,7 @@ export const InformationProvider = ({children}) =>{
     const [value, setValue] = useState("")
     const [userAccount, setUserAccount]= useState({})
     const [user, setUser] = useState({})
-
+    const [cardUser, setCardUser] = useState()
     const changeValue = (teste)=> {
         setValue(teste)
 
@@ -23,7 +23,12 @@ export const InformationProvider = ({children}) =>{
         })
 
     }
-
+    const cardUserLog = (number, validity) =>{
+        setCardUser({
+            number:number,
+            validity:validity
+        })
+}  
     const informationsAccountUser = (id, agency, numberVerificate, number, limit )=>{
         setUserAccount({
             id:id,
@@ -35,7 +40,7 @@ export const InformationProvider = ({children}) =>{
         })
     }
     return (
-        <InformationsContext.Provider value={{value, user, changeValue, userAccount, userLog, informationsAccountUser}}>
+        <InformationsContext.Provider value={{value, user, cardUser, cardUserLog, changeValue, userAccount, userLog, informationsAccountUser}}>
             {children}
         </InformationsContext.Provider>
     )

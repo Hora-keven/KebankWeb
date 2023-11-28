@@ -134,7 +134,7 @@ p {
     align-items: center;
     display: flex;
     height: 44vh;
- 
+
 
 
 }
@@ -270,17 +270,13 @@ ul a {
     gap: 5rem;
 }
 
-.informationsCard {
-    background-color: rgb(182, 182, 182);
-    height: 30vh;
-    width: 30%;
+.information {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    gap: 5rem;
     align-items: center;
-    gap: 1.5rem;
-
-
+    justify-content: center;
+    
 }
 
 .informationExtract {
@@ -292,8 +288,104 @@ ul a {
 
     align-items: center;
     overflow: auto;
+ 
 
 
+}
+
+.information .card {
+  
+    height: 30vh;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 50px;
+    gap: 1.5rem;
+  background-color: #0084B4;
+    border-radius: 15px ;
+
+}
+.cardInfo{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+    gap: 7.5rem;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+  
+}
+.information .card #nfcCard {
+    position: relative;
+    left: 25rem;
+    bottom: 17rem;
+}
+
+.information .card #nfcCard img {
+    height: 3vh;
+}
+
+.informationCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 20px;
+
+}
+
+.informationCard h2 {
+    color: white;
+    font-size: 1.6rem;
+}
+.informationCard #number{
+    position: relative;
+    right: 0.1rem;
+    bottom: 58px;
+}
+.informationCard #validity {
+    position: relative;
+    right: 0.1rem;
+    bottom: 5px;
+}
+
+.informationCard #name {
+    position: relative;
+    bottom: 5px;
+    right: 11.9rem;
+}
+
+.information .card #chipCard {
+    position: relative;
+    right: 35px;
+    bottom: 60px;
+}
+
+.information .card #flagCard {
+    position: relative;
+    left: 23rem;
+    top: 8rem
+}
+
+.information .card #chipCard img {
+    height: 4vh;
+}
+
+.information .card #flagCard img {
+    height: 3vh;
+}
+
+.information .card .slogan {
+    color: black;
+}
+
+.information .card .slogan .kebank {
+    font-size: 1.6ch;
 }
 
 h2 {
@@ -302,12 +394,12 @@ h2 {
 
 .informationExtract .card {
     height: 6vh;
-    padding: 10px;
     width: 90%;
     display: flex;
     flex-direction: row;
-    gap: 105px;
-
+    align-items: center;
+    justify-content: flex-start;
+    gap: 127px;
 }
 
 .informationExtract .card:hover {
@@ -321,10 +413,12 @@ h2 {
 .title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    gap: 28%;
+    gap: 9rem;
+    padding: 10px;
+    padding-left: 60px;
     width: 100%;
     border-bottom: black solid 1px;
 }
@@ -382,6 +476,12 @@ h2 {
 
 }
 
+@media screen and (max-width: 1287px) {
+    .header{
+        height: 15vh;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     #imgkebank {
         position: relative;
@@ -394,7 +494,7 @@ h2 {
 
     .ContainertextR {
         height: 40vh;
-       place-items: center;
+        place-items: center;
     }
 
     .text {
@@ -421,7 +521,7 @@ h2 {
 
 
     .header {
-        height: 20vh;
+        height: 15vh;
     }
 
 
@@ -432,22 +532,28 @@ h2 {
         height: 5vh;
         width: 20vh;
     }
-    .cards{
+
+    .cards {
         grid-template-columns: 1fr;
     }
-    .card{
+
+    .card {
         height: 40vh;
     }
+
     .content {
         width: 100%;
         height: auto;
     }
-    .slogan{
+
+    .slogan {
         width: 70%;
     }
-    .header{
+
+    .header {
         height: 15vh;
     }
+
     .Containertext {
         width: 80%;
         justify-content: center;
@@ -489,7 +595,8 @@ h2 {
     input {
         width: 25vw;
     }
-    button{
+
+    button {
         width: 10ch;
     }
 
@@ -500,25 +607,32 @@ h2 {
         height: auto;
         width: auto;
     }
-    .content{
+
+    .content {
         flex-direction: column;
     }
-    .informationExtract{
+
+    .informationExtract {
         width: 90%;
     }
+
     #imgkebankRigth {
         height: auto;
         width: auto;
     }
-    .slogan{
+
+    .slogan {
         width: 70%;
     }
-    .header{
+
+    .header {
         height: 15vh;
     }
+
     p {
         font-size: 1.2em;
     }
+
 
     .cards {
         width: 90vw;
@@ -531,32 +645,39 @@ h2 {
     .textCard {
         margin-top: 10px;
     }
-    footer{
-        height: 200vh;
+
+    footer {
+        height: 100vh;
     }
-    .header{
+
+    .header {
         height: 15vh;
     }
-    .card{
-        height: 58vh;
+
+    .card {
+        height: 38vh;
     }
 }
 
 @media screen and (max-width: 520px) {
     .Containertext {
         width: 200%;
-      
+
     }
-    img{
+
+    img {
         height: 10vh;
     }
+
     .ContainertextL {
         width: 100%;
     }
 
-    .cards{
+    .cards {
         grid-template-columns: 1fr;
-    }.card{
+    }
+
+    .card {
         height: 50vh;
     }
 
@@ -568,17 +689,19 @@ h2 {
     p {
         font-size: 1.1em;
     }
+
     .slogan {
         width: 80%;
-     
+
     }
 
-    
+
 
     h1 {
         font-size: 1.2em;
     }
-    footer{
+
+    footer {
         height: 230vh;
     }
 }

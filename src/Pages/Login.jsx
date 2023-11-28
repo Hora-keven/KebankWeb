@@ -8,7 +8,7 @@ import api from "../../api/Api";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-    const { informationsAccountUser, userLog } = useContext(InformationsContext)
+    const { informationsAccountUser, userLog, cardUserLog } = useContext(InformationsContext)
     const [cpfCnpj, setCpfCnpj] = useState("")
     const [password, setPassword] = useState("")
    
@@ -55,7 +55,10 @@ export default function Login() {
                                 response.data[0].limit
 
                             )
-                          
+                            cardUserLog(
+                                response.data[0].account_card[0].number,
+                                response.data[0].account_card[0].validity
+                            )
                          
                            navigate("/informations")
                         }).catch(function (error) {

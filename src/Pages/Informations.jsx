@@ -4,9 +4,13 @@ import Footer from '../components/Footer'
 import api from '../../api/Api'
 import { useContext, useState, useEffect } from 'react'
 import { InformationsContext } from '../context/InformationsContext'
+import Kebank from '../components/SloganKebank'
+import flagCard from './../assets/flagCard.png'
+import nfc from './../assets/nfc.png'
+import chip from './../assets/chip.png'
 
 function Contact() {
-  const { userAccount, user } = useContext(InformationsContext)
+  const { userAccount, cardUser, user } = useContext(InformationsContext)
   const [movimentation, setMovimentation] = useState([])
 
   useEffect(() => {
@@ -27,30 +31,46 @@ function Contact() {
   return (
     <>
       <Header enable={false} />
-
       <div className="content">
-        <div className="informationsCard">
-          <h1>Cliente {user.nameOrCompanyName}</h1>
-          <span>Saldo: {userAccount.limit}</span>
-          <span>Agencia: {userAccount.agency}</span>
-          <span>Conta corrente: {userAccount.number}</span>
-        </div>
-        <div className="informationExtract">
-          <div className="title">
-            <h2>Data</h2>
-            <h2>Valor</h2>
-            <h2>Para quem</h2>
-          </div>
-          {movimentation.map((item) =>
-            <div className="card">
-              <p className='textInfo'>{item.date}</p>
-              <p className='textInfo'>R${item.value}</p>
-              <p className='textInfo'>{item.state}</p>
+        <div className="information">
+          <div className="card">
+            <Kebank />
+            <div id="flagCard">
+              <img src={flagCard} />
             </div>
-          )}
+            <div className="chipCard">
+              <div id="chipCard">
+                <img src={chip} />
+              </div>
+            </div>
+            <div className="informationCard">
+              <h2 id='number'>{cardUser.number}</h2>
+              <h2 id='name'>{user.nameOrCompanyName}</h2>
+              <h2 id='validity'>{cardUser.validity}</h2>
+            </div>
+            <div id="nfcCard">
+              <img src={nfc} />
+            </div>
+          </div>
+          <div className="informationExtract">
+            <div className="title">
+              <h2>Data</h2>
+              <h2>Valor</h2>
+              <h2>Tipo transferência</h2>
+            </div>
+            {movimentation.map((item) =>
+              <div className="cardInfo">
+                <p className='textInfo'>{item.date.substr(0, 10)}</p>
+                <p className='textInfo'>R${item.value}</p>
+                <p className='textInfo'>{item.state}</p>
+              </div>
 
+            )}
+        
+          </div>
         </div>
       </div>
+
 
 
       <Footer />
