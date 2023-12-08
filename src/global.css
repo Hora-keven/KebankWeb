@@ -303,12 +303,12 @@ ul a {
     align-items: flex-start;
     padding-left: 50px;
     gap: 1.5rem;
-  background-color: #0084B4;
+    background-color: #0084B4;
     border-radius: 15px ;
 
 }
 .cardInfo{
-    height: 30vh;
+    height: 7vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -323,7 +323,7 @@ ul a {
 .information .card #nfcCard {
     position: relative;
     left: 25rem;
-    bottom: 17rem;
+    bottom: 24rem;
 }
 
 .information .card #nfcCard img {
@@ -333,9 +333,10 @@ ul a {
 .informationCard {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
-    right: 20px;
+    bottom: 70px;
+    gap: 15px;
 
 }
 
@@ -345,19 +346,19 @@ ul a {
 }
 .informationCard #number{
     position: relative;
-    right: 0.1rem;
-    bottom: 58px;
+    width: 300px;
+    right: 50px;
 }
 .informationCard #validity {
     position: relative;
-    right: 0.1rem;
-    bottom: 5px;
+    bottom: 48px;
+  
 }
 
 .informationCard #name {
     position: relative;
-    bottom: 5px;
-    right: 11.9rem;
+    right: 200px;
+  
 }
 
 .information .card #chipCard {
@@ -480,6 +481,61 @@ h2 {
     .header{
         height: 15vh;
     }
+
+    .information{
+        width: 100%;
+        flex-direction: column;
+    }
+    .information .card{
+        width: 60%;
+    }
+    .information .card #nfcCard {
+        position: relative;
+        left: 21rem;
+        bottom: 24rem;
+    }
+
+  
+    .informationCard #number{
+        position: relative;
+        width: 300px;
+        right: 50px;
+    }
+    .informationCard #validity {
+        position: relative;
+        bottom: 51px;
+      
+    }
+    
+    .informationCard #name {
+        position: relative;
+        right: 175px;
+      
+    }
+    .informationExtract{
+        width: 100%;
+    }
+    .informationExtract p {
+        font-size: 2.5ch;
+    }
+    
+    .information .card #chipCard {
+        position: relative;
+        right: 35px;
+        bottom: 60px;
+    }
+    
+    .information .card #flagCard {
+        position: relative;
+        left: 20rem;
+        top: 7rem
+    }
+    
+   
+    .information .card .slogan {
+        position: relative;
+        right: 75px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -518,12 +574,32 @@ h2 {
         height: 70vh;
         gap: 40px;
     }
-
-
+    footer{
+        height: 100vh;
+    }
+    .information .card .slogan{
+        left: 10px;
+    }
+    .information .card #name{
+        right: 190px;
+    }
+    .information .card #flagCard{
+        left: 350px;
+    }
+    .information .card #nfcCard{
+        left: 370px;
+        bottom: 370px;
+    }
+    .information .card{
+        width: 40%;
+        height: 35vh;
+    }
     .header {
         height: 15vh;
     }
-
+    .informationExtract{
+        width: 70%;
+    }
 
 }
 
@@ -647,7 +723,8 @@ h2 {
     }
 
     footer {
-        height: 100vh;
+        height: 105vh;
+        width: 100%;
     }
 
     .header {
@@ -657,12 +734,38 @@ h2 {
     .card {
         height: 38vh;
     }
+    .information .card{
+        width:75%;
+        height: 27vh;
+    
+    }
+    .information .card .slogan{
+        right: 90px;
+    }
+    .information .card #flagCard{
+        left: 23rem;
+        top: 130px;
+    }
+    .informationExtract p {
+        font-size: 2.1ch;
+    }
+    .informationExtract  {
+        width: 90%;
+    }
+    .information .card #nfcCard {
+  
+        left: 25rem;
+      
+    }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 540px) {
     .Containertext {
         width: 200%;
 
+    }
+    .header{
+        width: 100%;
     }
 
     img {
@@ -695,13 +798,34 @@ h2 {
 
     }
 
-
-
     h1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     footer {
         height: 230vh;
+    }
+    .information .card{
+        width:70%;
+        height: 26vh;
+    
+    }
+    .information .card .slogan{
+        right: 90px;
+    }
+    .information .card #flagCard{
+        left: 10rem;
+        top: 130px;
+    }
+    .informationExtract p {
+        font-size: 2.1ch;
+    }
+    .informationExtract  {
+        width: 10%;
+    }
+    .information .card #nfcCard {
+  
+        left: 25rem;
+      
     }
 }

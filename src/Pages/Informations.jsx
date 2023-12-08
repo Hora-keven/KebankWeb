@@ -44,7 +44,7 @@ function Contact() {
               </div>
             </div>
             <div className="informationCard">
-              <h2 id='number'>{cardUser.number}</h2>
+              <h2 id='number'>{cardUser.number.replace(/(.{4})/g, "$1 ")}</h2>
               <h2 id='name'>{user.nameOrCompanyName}</h2>
               <h2 id='validity'>{cardUser.validity}</h2>
             </div>
