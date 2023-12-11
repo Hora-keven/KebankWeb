@@ -11,7 +11,7 @@ import chip from './../assets/chip.png'
 
 //Pagina onde pega dados da api e retorno na mesma.
 
-function Contact() {
+function Informations() {
   const { userAccount, cardUser, user } = useContext(InformationsContext)
   const [movimentation, setMovimentation] = useState([])
 
@@ -80,4 +80,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Informations
