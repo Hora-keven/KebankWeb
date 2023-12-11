@@ -317,7 +317,7 @@ ul a {
   
     gap: 7.5rem;
     padding: 1rem;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   
 }
 .information .card #nfcCard {
@@ -421,7 +421,7 @@ h2 {
     padding: 10px;
     padding-left: 60px;
     width: 100%;
-    border-bottom: black solid 1px;
+    border-bottom: black solid 2px;
 }
 
 
