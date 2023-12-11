@@ -1,6 +1,6 @@
 import axios from "axios"
 
-
+//Criando a constante da api para poder exportar e usar a url nos outros arquivos.
 
 
 const headers = {
