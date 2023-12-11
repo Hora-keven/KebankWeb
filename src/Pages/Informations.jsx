@@ -9,6 +9,8 @@ import flagCard from './../assets/flagCard.png'
 import nfc from './../assets/nfc.png'
 import chip from './../assets/chip.png'
 
+//Pagina onde pega dados da api e retorno na mesma.
+
 function Contact() {
   const { userAccount, cardUser, user } = useContext(InformationsContext)
   const [movimentation, setMovimentation] = useState([])
