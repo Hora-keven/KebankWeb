@@ -7,6 +7,8 @@ import { InformationsContext } from "../context/InformationsContext";
 import api from "../../api/Api";
 import { useNavigate } from "react-router-dom";
 
+//Tela aonde eu entro com dados do usuario e retorno.
+
 export default function Login() {
     const { informationsAccountUser, userLog, cardUserLog } = useContext(InformationsContext)
     const [cpfCnpj, setCpfCnpj] = useState("")
