@@ -1,4 +1,4 @@
-
+//Componente que foi utilizado nas paginas, pra passar algumas informações
 
 export default function Card({ title, content, img }) {
     return (
