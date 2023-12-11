@@ -9,6 +9,9 @@ import pix from './../assets/pix.png'
 import cartao from './../assets/cartao.png'
 import extrato from './../assets/extrato.png'
 import Card from './../components/Card'
+
+//Tela principal onde tenho algumas informações sobre o Kebank.
+
 function Home() {
   const functions = [
 
